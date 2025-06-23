@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Victor Leal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d112b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #fef102;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+    header img {
+      border-radius: 5px;
+      max-width: 200px;
+      margin-right: 2rem;
+    }
+    header .intro {
+      max-width: 600px;
+    }
+    header .intro h1 {
+      font-size: 2.5rem;
+      color: #0d112b;
+      margin-bottom: 1rem;
+    }
+    header .intro p {
+      color: #0d112b;
+      font-weight: 600;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #fef102;
+      margin-bottom: 1.5rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background-color: #1a1d3b;
+      padding: 1rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h3 {
+      margin-bottom: 0.5rem;
+      color: #fef102;
+    }
+    .project p {
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #fef102;
+      color: #0d112b;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .contact {
+      background-color: #fef102;
+      color: #0d112b;
+      padding: 2rem;
+      text-align: center;
+    }
+    .contact h2 {
+      margin-bottom: 1rem;
+    }
+    .contact a {
+      color: #0d112b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.8rem;
+      background-color: #0d112b;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="sua-foto.jpg" alt="Foto de Victor Leal">
+    <div class="intro">
+      <h1>Victor da Silva Leal Rodrigues</h1>
+      <p>Programador de sistemas de automação | CLPs, IoT, Microcontroladores</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>Projetos</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Motor e Esteira com CLP</h3>
+        <p>Controle remoto de motor trifásico usando CLP Siemens S7-300 e plataforma Wegnology.</p>
+        <a href="#" class="btn">Ver vídeo</a>
+      </div>
+      <div class="project">
+        <h3>CFW08 + Siemens</h3>
+        <p>Comunicação entre inversor de frequência WEG CFW08 e CLP via TIA Portal.</p>
+        <a href="#" class="btn">Ver vídeo</a>
+      </div>
+      <div class="project">
+        <h3>Monitoramento IoT</h3>
+        <p>Sensores industriais conectados ao ESP32 com exibição remota via Arduino Cloud.</p>
+        <a href="#" class="btn">Ver vídeo</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Currículo</h2>
+    <a href="Curriculo_Victor_Leal.pdf" class="btn">Versão Visual</a>
+    <a href="Curriculo_Victor_Leal_Gupy.pdf" class="btn">Versão Gupy</a>
+  </section>
+
+  <div class="contact">
+    <h2>Contate-me</h2>
+    <p>Email: <a href="mailto:victorlealrodrigues06@gmail.com">victorlealrodrigues06@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/5511946601526">(11) 94660-1526</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/victorleal06">linkedin.com/in/victorleal06</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Victor Leal. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
